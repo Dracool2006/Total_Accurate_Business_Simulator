@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Righ_Button_Logic.cs">
+    <Files>
+      <File FileName="Assets\Scripts\Player_Movement.cs" Line="27" Column="44" />
+      <File FileName="Assets\ON_TRIGGER_START.cs" Line="14" Column="4" />
+      <File FileName="Assets\Righ_Button_Logic.cs" Line="19" Column="23" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
