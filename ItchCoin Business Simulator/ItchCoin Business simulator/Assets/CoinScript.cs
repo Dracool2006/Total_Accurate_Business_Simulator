@@ -2,12 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CoinScript : MonoBehaviour {
+public class CoinScript : MonoBehaviour
+{
 
     // Use this for initialization
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        ScoreTextScript.coinAmount += 10;
-        Destroy(gameObject);
+        if (other.tag == "Player")
+        {
+            ScoreTextScript.coinAmount += 10;
+            Destroy(gameObject);
+        }
     }
 }

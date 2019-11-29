@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Red Stage
+  - Green Stage
+  - Blue Stage
+  - White Stage
   layers:
   - Default
   - TransparentFX
@@ -14,7 +18,7 @@ TagManager:
   - 
   - 
   - UI_Text
-  - 
+  - Colourfull_Lines
   - 
   - 
   - 
@@ -46,4 +50,7 @@ TagManager:
     locked: 0
   - name: UI
     uniqueID: 1379823253
+    locked: 0
+  - name: Color_Lines
+    uniqueID: 2883928957
     locked: 0

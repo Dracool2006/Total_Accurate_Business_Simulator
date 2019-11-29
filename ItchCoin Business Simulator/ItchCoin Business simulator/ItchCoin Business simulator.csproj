@@ -232,10 +232,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Button_script.cs" />
     <Compile Include="Assets\CoinScript.cs" />
+    <Compile Include="Assets\GridHolder.cs" />
     <Compile Include="Assets\PlayerMarkeMovement.cs" />
     <Compile Include="Assets\ScoreTextScript.cs" />
     <Compile Include="Assets\scri.cs" />
+    <Compile Include="Assets\script.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
