@@ -37,7 +37,7 @@ public class PlayerMarkeMovement : MonoBehaviour
     ////    Destroy(referenceTile);
     ////}
     float dirX, dirY;
-    Rigidbody2D rb;
+    //Rigidbody2D rb;
     [SerializeField]
     private float moveSpeed = 5f;
 
@@ -50,6 +50,15 @@ public class PlayerMarkeMovement : MonoBehaviour
     private Sprite black;
     [SerializeField]
     private Sprite white;
+
+    //Для движения мышкой объявление переменных
+    private Vector3 mousePosition;
+    private Rigidbody2D rb;
+    private Vector2 direction;
+    [SerializeField]
+    private float moveSpeedX = 50f;
+    [SerializeField]
+    private float moveSpeedY = 50f;
 
 
 
@@ -84,13 +93,54 @@ public class PlayerMarkeMovement : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetMouseButtonDown(0))
+        {
+            //пока не получается заставить определять что тык произошёл именно по итч.коину
+            //RaycastHit hit;
+            //Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            //if (Physics.Raycast(ray, out hit))
+            //{
+             //   if (hit.transform.name == "PlayerMarker")
+             //   {
+             //       Debug.Log("Hit point: " + hit.point);
+                    ScoreTextScript.coinAmount += 10;
+              //  }
+            //}
+        }
 
-        dirX = Input.GetAxis("Horizontal");
-        dirY = Input.GetAxis("Vertical");
 
-        rb.velocity = new Vector2(dirX * moveSpeed, dirY * moveSpeed);
+
+        if (Input.GetMouseButton(0))
+        {
+
+            
+
+
+            mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            direction = (mousePosition - transform.position).normalized;
+
+            if (mousePosition.y > rb.position.y)
+            {
+                rb.velocity = new Vector2( 0 , direction.y * moveSpeedY);
+            }
+            if (mousePosition.y < rb.position.y)
+            {
+                rb.velocity = new Vector2(0, direction.y * moveSpeedY/10);
+            }
+        }
+        else {
+            rb.velocity = Vector2.zero;
+        }
+        //Логика движения клавишами на клавиатуре
+        //dirX = Input.GetAxis("Horizontal");
+        //dirY = Input.GetAxis("Vertical");
+        //rb.velocity = new Vector2(dirX * moveSpeed, dirY * moveSpeed);
+        //\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
     }
 
+    //**********Логика изменения цвета коина, когда начинается новый этап*******//
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Red Stage")
@@ -121,5 +171,19 @@ public class PlayerMarkeMovement : MonoBehaviour
         //    this.GetComponent<SpriteRenderer>().sprite = white;
         //    moveSpeed = 5f;
         //}
+        //\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    
+
+
+
+
+
+    }
+    void OnTriggerStay2D(Collider2D other) {
+        if (other.tag == "StopZone")
+        {
+            Debug.Log("Я В КРАСНОЙ ЗОНЕ!!!");
+            ScoreTextScript.coinAmount -= 5;
+        }
     }
 }

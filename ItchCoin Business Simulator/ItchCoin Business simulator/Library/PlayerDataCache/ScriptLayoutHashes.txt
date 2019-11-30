@@ -2,7 +2,7 @@ WebGL
 PlayerPath?
 C:/DRACOOL/Job/Git_Clones/Total_Accurate_Speedrun_Simulator/ItchCoin Business Simulator/ItchCoin Business simulator/BUILD
 SceneListBegin?
-Assets/MainScene.unity
+Assets/BetaVersion.unity
 SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 4b12dd839b2293f8457cd67cc3610b85 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
@@ -16,6 +16,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 92d7a83ea3c7404e484f3b2eed421855 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 92d7a83ea3c7404e484f3b2eed421855 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 df374c01140c2d578bf70cbd60073d1d UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Zone_Logic_Script
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 49cd62a578efc0a599b810a2b66cd49c UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -115,7 +116,8 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
-442b85508c08ada837c2512b324543a5 Assembly-CSharp.dll:.PlayerMarkeMovement
+d09f1f989b3480ee76b6b026252ebb71 Assembly-CSharp.dll:.GridHolder
+dcf7eb69a8ba5e43b55044f4f0040ca4 Assembly-CSharp.dll:.PlayerMarkeMovement
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CoinScript
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -148,7 +150,6 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.scri
-d09f1f989b3480ee76b6b026252ebb71 Assembly-CSharp.dll:.GridHolder
-7e2579d5e0b48594d6a40059d46046e7 Assembly-CSharp.dll:.script
 1b1b9295cc82be081a3b08ee647a2c8a Assembly-CSharp.dll:.Button_script
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.scri
+7e2579d5e0b48594d6a40059d46046e7 Assembly-CSharp.dll:.script

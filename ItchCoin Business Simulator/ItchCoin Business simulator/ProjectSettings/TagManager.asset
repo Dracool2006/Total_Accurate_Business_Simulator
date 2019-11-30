@@ -8,6 +8,7 @@ TagManager:
   - Green Stage
   - Blue Stage
   - White Stage
+  - StopZone
   layers:
   - Default
   - TransparentFX
