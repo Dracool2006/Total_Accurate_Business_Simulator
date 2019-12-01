@@ -9,6 +9,7 @@ TagManager:
   - Blue Stage
   - White Stage
   - StopZone
+  - Win Zone
   layers:
   - Default
   - TransparentFX
@@ -43,14 +44,14 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Color_Lines
+    uniqueID: 2883928957
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
   - name: UI
     uniqueID: 1379823253
-    locked: 0
-  - name: Color_Lines
-    uniqueID: 2883928957
     locked: 0
   - name: UI_TEXT
     uniqueID: 2884732869

@@ -1,9 +1,7 @@
 fileFormatVersion: 2
 guid: 7a474d09d738c904ea12fcb8e8286a2c
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: greenfield_0
-    21300002: greenfield_1
+  fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -33,7 +31,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: -1
     aniso: -1
-    mipBias: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: 1
